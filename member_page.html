@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="nav">
+        <div id="menu" style="margin-right: 95px ;">
+            <i class="bi bi-text-left icon"></i>
+        </div>
+        <div class="nav-2">
+            <a href="home_page.html">
+                <img src="./img/Logo.png" style="width: 90px;">
+            </a>
+        </div>
+        <div class="nav-3">
+            <div style="margin-right: 50px;">
+                <a href="member_page.html">
+                    <i class="bi bi-person icon"></i>
+                </a>
+            </div>
+            <div id="cart">
+                <i class="bi bi-cart3 icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="margin-top: 50px; margin-bottom: 20px;">
+                <span class="b1">帳戶</span>
+            </div>
+            <div style="display: flex;">
+                <div id="loginBtn" class="unLine">
+                    <span class="b4" style="font-weight: bold; margin: 10px 150px;">登入</span>
+                </div>
+                <div id="registerBtn" class="unLine">
+                    <span class="b4" style="font-weight: bold; margin: 10px 150px;">註冊</span>
+                </div>
+            </div>
+            <!-- Login -->
+            <div id="login">
+                <div style="display: flex; flex-direction: column;align-items: center; margin-top: 20px;">
+                    <p class="b4" style="font-weight: bold; margin-bottom: 0px;">歡迎回來</p>
+                    <p class="g4">使用您的電子郵件或電話號碼以及密碼登入。</p>
+                </div>
+                <form action="" style="width: 320px; height: 100%; display: flex; flex-direction: column;">
+                    <label for="memberEmail" style="margin: 15px 0px;">
+                        <input type="email" id="memberEmail" class="unLine" placeholder="電子郵件或手機號碼">
+                    </label>
+                    <br>
+                    <label for="memberPassword" style="margin: 15px 0px;">
+                        <input type="password" id="memberPassword" class="unLine" placeholder="密碼">
+                    </label>
+                    <div style="margin-bottom: 10px; cursor: pointer;">
+                        <p class="b5">忘記密碼?<i class="bi bi-arrow-right-short"></i></p>
+                    </div>
+                    <div style="display: flex;">
+                        <label for="memberRemember">
+                            <input type="checkbox" style="width: 16px;" id="memberRemember">
+                            <span class="g4">記住我(選項)</span>
+                        </label>
+                    </div>
+                    <button style="margin-top: 112px;">
+                        <span class="y4">登入</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Register -->
+             <div id="register" style="display: none;">
+                 <div style="display: flex; flex-direction: column; align-items: center;">
+                     <div style="display: flex; flex-direction: column;align-items: center; margin-top: 20px;">
+                        <p class="b4" style="font-weight: bold;">建立帳戶</p> 
+                        <p class="g4">已享有個人化的購物體驗,以及更快速的線上結帳流程。</p>
+                        <p class="g4">輸入您的手機號碼,已透過簡訊接受驗證碼。</p>
+                     </div>
+                     <form action="" style="width: 320px; height: 100%; display: flex; flex-direction: column;">
+                         <label for="memberTel" style="margin: 50px 0px;">
+                             <input type="tel" id="memberTel" class="unLine" placeholder="電話" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                         </label>
+                         <div style="display:flex; justify-content: center;">
+                             <button style="margin-top: 115px;">
+                                 <span class="y4" style="margin: 0px 94px;">寄送驗證碼</span>
+                             </button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+
+        </div>
+
+       <!-- Footer -->
+       <div class="footer">
+        <div class="footer-nav">
+            <a class="navhover" style="width: 100%; height: 50px; " href="serve_page.html">
+                <span class="b2" style="display: flex; justify-content: center; margin-top: 15px;">服務</span>
+            </a>
+            <a class="navhover" style="width: 100%; height: 50px;" href="fragrance_page.html">
+                <span class="b2" style="display: flex; justify-content: center; margin-top: 15px;">購物</span>
+            </a>
+            <a class="navhover" style="width: 100%; height: 50px;" href="about_page.html">
+                <span class="b2" style="display: flex; justify-content: center; margin-top: 15px;">關於</span>
+            </a>
+        </div>
+        <div class="footer-1">
+            <div>
+                <div>
+                    <span class="g2">TK CLASSIC</span>
+                </div>
+                <div>
+                    <span class="g3">週一至週五: 10:00 - 18:00</span>
+                </div>
+                <div>
+                    <span class="g3">TEL: 02-1234-4321</span>
+                </div>
+            </div>
+            <div class="footer-2">
+                <div style="margin-bottom: 30px;">
+                    <span class="g3">關於我們</span>
+                </div>
+                <div class="footer-3">
+                    <div>
+                        <a href="">
+                            <i class="bi bi-facebook icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="bi bi-line icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="bi bi-instagram icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="bi bi-youtube icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="pop-up-menu" class="popMenuMask" style="display: none;">
+        <div class="popMenu">
+            <div id="pop-up-menu-close" style="display: flex; justify-content: center; cursor: pointer;">
+                <span class="w1">主選單</span>
+                <i class="bi bi-backspace-fill icon2"
+                    style="display: flex; align-items: center; margin-left: 20px;"></i>
+            </div>
+            <div>
+                <div>
+                    <div style="margin-top: 40px; margin-bottom: 650px;">
+                        <a href="fragrance_page.html">
+                            <span class="w2">香氛</span>
+                        </a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="about_page.html">
+                            <span class="w2">關於TK</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping cart -->
+    <div id="pop-up-cart" class="popCartMask" style="display: none;">
+        <div class="popCart">
+            <div id="pop-up-cart-close" style="display: flex; justify-content: center; cursor: pointer;">
+                <i class="bi bi-backspace-reverse-fill icon2"
+                    style="display: flex; align-items: center; margin-right: 20px;"></i>
+                <span class="w1">購物車</span>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 40px;">
+                <span class="w2">您的購物車沒有任何商品</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/myScript.js"></script>
+</body>
+
+</html>

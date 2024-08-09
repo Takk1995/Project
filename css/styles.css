@@ -1,0 +1,311 @@
+@import url("./normalize.css");
+
+.main {
+    margin-top: 110px;
+}
+
+.icon {
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+}
+
+.icon2 {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon3 {
+    font-size: 50px;
+    color: #F8D99E;
+    cursor: pointer;
+}
+
+button {
+    border: 0px;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 0px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-2 {
+    display: flex;
+}
+
+.nav-3 {
+    display: flex;
+}
+
+.main-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-kv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 914px;
+    background-image: url('../img/scetion-kv.png');
+    background-size: cover;
+}
+
+.fMain-kv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    background-image: url('../img/fragrance2.png');
+    background-size: cover;
+}
+
+.main-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #e4e4e4;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 20%;
+}
+
+.footer-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.y1 {
+    font-size: 42px;
+    color: #F8D99E;
+}
+
+.y2 {
+    font-size: 32px;
+    color: #F8D99E;
+}
+
+.y3 {
+    font-size: 28px;
+    color: #F8D99E;
+}
+
+.y4 {
+    font-size: 24px;
+    color: #F8D99E;
+}
+
+.g1 {
+    font-size: 28px;
+    color: #5d5d5d;
+}
+
+.g2 {
+    font-size: 24px;
+    color: #5d5d5d;
+}
+
+.g3 {
+    font-size: 20px;
+    color: #5d5d5d;
+}
+
+.g4 {
+    font-size: 16px;
+    color: #5d5d5d;
+}
+
+.b1 {
+    font-size: 42px;
+    color: black;
+    font-weight: bold;
+}
+
+.b2 {
+    font-size: 32px;
+    color: black;
+}
+
+.b3 {
+    font-size: 24px;
+    color: black;
+}
+
+.b4 {
+    font-size: 20px;
+    color: black;
+}
+
+.b5 {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.w1 {
+    font-size: 32px;
+    color: white;
+}
+
+.w2 {
+    font-size: 20px;
+    color: white;
+}
+
+.popMenuMask {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.popMenu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    z-index: 2;
+}
+
+.popCartMask {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.popCart {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    z-index: 2;
+}
+
+.severCard {
+    border: 2px solid #e4e4e4;;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.unLine {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.unLine:hover {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.commodityUnLine{
+    border-bottom: 3px solid #FFB692;
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
+
+.navhover{
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    padding-bottom: 10px;
+}
+
+.navhover:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+}
