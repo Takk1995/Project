@@ -8,11 +8,49 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header -->
-    <div class="nav">
+    <div class="nav" style="z-index: 2;">
         <div id="menu" style="margin-right: 95px ;">
             <i class="bi bi-text-left icon"></i>
         </div>
@@ -35,7 +73,38 @@
 
     <!-- Main -->
     <div class="main">
-
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/fragrance3.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/fragrance2.png">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p class="b1">
+                奢華與經典
+            </p>
+            <p class="b3">
+                自創立以來，我們致力於打造獨特而精緻的香水，每一款香氛都是對優雅與品味的完美詮釋。
+            </p>
+            <p class="b3">
+                TK CLASSIC 以選用頂級原料為基礎，結合傳統工藝與現代創新，創造出具有深度與層次的香水體驗。
+            </p>
+            <p class="b3">
+                我們的香水系列以其獨特的氣味調和和高品質的製作工藝而聞名，每一瓶香水都是經過精心設計與調配，旨在提升佩戴者的個人魅力與自信。
+            </p>
+            <p class="b3">
+                無論是經典的花香、木質香還是清新的柑橘香，TK CLASSIC 都能滿足不同場合和個人風格的需求。
+            </p>
+            <p class="b3">
+                選擇 TK CLASSIC，就是選擇了一種經典與永恆的美感，我們的香水不僅是氣味的表達，更是一種生活藝術的展現。
+            </p>
+        </div>
         <!-- Footer -->
         <div class="footer">
             <div class="footer-nav">
@@ -123,7 +192,7 @@
         <div class="popCart">
             <div id="pop-up-cart-close" style="display: flex; justify-content: center; cursor: pointer;">
                 <i class="bi bi-backspace-reverse-fill icon2"
-                style="display: flex; align-items: center; margin-right: 20px;"></i>
+                    style="display: flex; align-items: center; margin-right: 20px;"></i>
                 <span class="w1">購物車</span>
             </div>
             <div style="display: flex; justify-content: center; margin-top: 40px;">
@@ -132,6 +201,15 @@
         </div>
     </div>
     <script src="./js/myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
